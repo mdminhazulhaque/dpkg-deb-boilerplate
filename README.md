@@ -23,8 +23,8 @@ Basically the boilerplate does
 
 ## Umm, can you be more specific?
 
-* `src/project` contains the source. Running `make -c src/project` builds `project`, `project.h` and `libproject.so` and `make -c src/project` copies them to `build` directory.
-* `debian/rules` creates a shador directory tree at `debian/project`, and copies files from `build` to there.
+* `src/project` contains the source. Running `make -c src/project` builds `project`, `project.h` and `libproject.so`. Then `make -c src/project install` copies them to `build` directory.
+* `debian/rules` creates a shadow directory tree under `debian/project`, and copies files from `build` to there.
 * `debian/control` is used to specify package name, architecture, dependecy, version, maintainer etc inforamtion.
 * `postrm` is used to cleanup when package is uninstalled.
 * `postinst` is used to reload library database after install (helps the command `project` easily find `libproject.so`.
