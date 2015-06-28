@@ -1,9 +1,9 @@
 # dpkg-deb-boilerplate
-A boilerplate `debuild` project for building debian package using [Lanuchpad](https://launchpad.net) or other services
+An easy to use boilerplate `debuild` project for building debian package using [Lanuchpad](https://launchpad.net) or other services.
 
 ## Why do I need it? Isn't `dpkg --build dirname` enough?
 
-`dpkg --build dirname` is good, but debian packaging policy provides a solid build system to easily install application binary, libraries, service scripts, launcher, manual etc. Also for automated build systems like `launchpad` or `open build system` you need to provide a source archive. This boilerplate might come handy.
+`dpkg --build dirname` is good, but debian packaging policy provides a solid build system to easily install application binaries, libraries, service scripts, launchers, manuals etc. Also for automated build systems like `ubuntu launchpad` or `opensuse build service` you need to provide a source archive, not prebuild binaries. This boilerplate might come handy in such circumstance.
 
 ## What do I need to make it working?
 Install `build-essentials` which will automatically install `make`, `gcc`, `g++`, `dpkg-dev` etc. packages.
@@ -18,8 +18,8 @@ Install `build-essentials` which will automatically install `make`, `gcc`, `g++`
 
 Basically the boilerplate does
 
-1. Compile and build a demo library and executable from source, install them to `build` directory.
-2. Debian packaging system takes the files from build directory and packas them.
+1. Compile and build a demo library and executable from source, and install them to `build` directory.
+2. Debian packaging system takes the files from `build` directory, and packs them into `deb` file.
 
 ## Umm, can you be more specific?
 
