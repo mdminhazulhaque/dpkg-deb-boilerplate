@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+.PHONY: clean build binary binary-arch
+
 CP=cp -f
 MKDIR=mkdir -p
 RM=rm -rf
@@ -31,5 +33,3 @@ binary-arch:
 clean:
 	$(RM) debian/project
 	$(MAKE) clean
-
-.PHONY: clean build binary binary-arch
