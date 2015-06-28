@@ -1,0 +1,13 @@
+Package: project
+Version: 1.0
+Architecture: amd64
+Maintainer: Md. Minhazul Haque <mdminhazulhaque@gmail.com>
+Installed-Size: 41
+Depends: libc6 (>= 2.15)
+Section: dev
+Priority: optional
+Homepage: https://github.com/minhazul-haque/dpkg-deb-boilerplate
+Description: project
+ boilerplate project for deb building.
+ .
+ Visit https://github.com/minhazul-haque/dpkg-deb-boilerplate
